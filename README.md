@@ -16,7 +16,8 @@ Please do not take `yak.js` too seriously. This started as a joke. Who knows how
  * [Browser example](browser-example)
  * [Use: directly in the browser](use-directly-in-the-browser)
  * [Use: in a V8 backend](use-in-a-v8-backend)
-
+ * [Tools](tools)
+ 
 ## Browser example 
 
 [./yak_test.html](./yak_test.html)
@@ -114,7 +115,7 @@ yak.paste([
 
 2b. Another possible use: call `yak(<object>)` or `yak(yak.readeval(<filename>))`, which both return a markup string - they do NOT write to the standard output.
 
-= Tools =
+## Tools
 
 `yak.js` comes along with a few small tools like `yak.o()`, see the (currently pretty short) [source](./yak.js).
 
