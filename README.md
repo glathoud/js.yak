@@ -20,7 +20,9 @@ Please do not take `yak.js` too seriously. This started as a joke. Who knows how
  
 ## Browser example 
 
-[./yak_test.html](./yak_test.html)
+Source: [./index.html](./index.html)
+
+Live: http://glat.info/js.yak/
 
 ## Use: directly in the browser
 
