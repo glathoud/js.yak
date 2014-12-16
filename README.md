@@ -7,22 +7,22 @@ Idea : sick of both HTML and kludgy backend frameworks -> use JS &
 JSON to write dynamic pages. Can also run in V8 backend + cache
 (varnish or equivalent) if you absolutely want pure HTML output.
 
-= Example =
+## Example 
 
 [./yak_test.html](./yak_test.html)
 
-= Use: directly in the browser =
+## Use: directly in the browser
 
 1. Load `yak.js`
 
-{{{
+```
 #!html
 <script type="text/javascript" src="yak.js"></script>
-}}}
+```
 
 2a. One possible use: write yak.js code inline and parse it later on:
 
-{{{
+```
 #!html
 
 <script type="text/yak.js">
@@ -53,11 +53,11 @@ JSON to write dynamic pages. Can also run in V8 backend + cache
 
 <script type="text/javascript">yak.parse()</script>
 
-}}}
+```
 
 2b. Another use: directly call `yak.paste(<object>)` or `yak.paste(<filename>)`:
 
-{{{
+```
 #!html
 
 <script type="text/javascript">yak.paste([ 
@@ -73,20 +73,20 @@ or
 yak.paste("yak_test.yak.js");
 </script>
 
-}}}
+```
 
-= Use: in a V8 backend =
+## Use: in a V8 backend
 
 1. Load `yak.js`:
 
-{{{
+```
 #!js
 load('yak.js');
-}}}
+```
 
 2a. One possible use: call `yak.paste(<object or filename>)` as above, which writes to the standard output right away. Example:
 
-{{{
+```
 #!js
 
 yak.paste([
@@ -100,7 +100,7 @@ yak.paste([
       ]}
   ]}
 ]);
-}}}
+```
 
 2b. Another possible use: call `yak(<object>)` or `yak(yak.readeval(<filename>))`, which both return a markup string - they do NOT write to the standard output.
 
