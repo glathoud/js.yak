@@ -25,8 +25,7 @@ Please do not take `yak.js` too seriously.
 
 1. Load `yak.js`
 
-```
-#!html
+```html
 <script type="text/javascript" src="yak.js"></script>
 ```
 
