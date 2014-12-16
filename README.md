@@ -24,15 +24,15 @@ Please do not take `yak.js` too seriously. This started as a joke. Who knows how
 
 ## Use: directly in the browser
 
-Depending on your constraints (SEO...), the size of your contents, their static or dynamic nature, and your taste, you can use one or both of the two options 2.a. or 2.b.
+Depending on your constraints (SEO...), the size of your contents, their static or dynamic nature, and your taste, you can use one or both of the two options 2a. or 2b.
 
- 1. Load `yak.js`
+1. Load `yak.js`
 
 ```html
 <script type="text/javascript" src="yak.js"></script>
 ```
 
- 2.a. One possible use: write yak.js code inline and parse it later on:
+2a. One possible use: write yak.js code inline and parse it later on:
 
 ```html
 <script type="text/yak.js">
@@ -72,7 +72,7 @@ Depending on your constraints (SEO...), the size of your contents, their static 
 
 ```
 
- 2.b. Another use: directly call `yak.paste(<object>)` or `yak.paste(<filename>)`:
+2b. Another use: directly call `yak.paste(<object>)` or `yak.paste(<filename>)`:
 
 ```html
 
