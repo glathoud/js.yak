@@ -5,7 +5,8 @@
 //
 // Guillaume Lathoud
 // December 2014
-
+//
+// LICENSE: do whatever you want with this code. It is not my problem.
 
 (function () {
 
