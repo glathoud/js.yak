@@ -13,10 +13,10 @@ Please do not take `yak.js` too seriously. This started as a joke. Who knows how
 
 ## Contents
 
- * [Browser example](browser-example)
- * [Use: directly in the browser](use-directly-in-the-browser)
- * [Use: in a V8 backend](use-in-a-v8-backend)
- * [Tools](tools)
+ * [Browser example](#browser-example)
+ * [Use: directly in the browser](#use-directly-in-the-browser)
+ * [Use: in a V8 backend](#use-in-a-v8-backend)
+ * [Tools](#tools)
  
 ## Browser example 
 
