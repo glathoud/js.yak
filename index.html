@@ -10,7 +10,15 @@
 
     <script type="text/yak.js">
     [
-        { p : [ 'Summary: ', { ul : 'wrote plain HTML > got fed up writing closing tags and having too little page structure dynamics > generated HTML using frameworks > too many features > kludge accumulated over time > wrote plain HTML again > got fed up again > wrote - wait first wrote YAK.'.split( '>' ).map( yak.f( '{ li : v }' ) ) }
+        { p : [
+            'This page shows various uses of '
+            , { code : 'yak.js' }
+            , ', which unites JS and JSON to let you write dynamic HTML pages.'
+            , ' This started as a joke. Who knows...'
+            ]
+        }
+        , { p : { 'a href="http://github.com/glathoud/js.yak"' : 'GitHub repository' } }
+        , { p : [ 'Summary: ', { ul : 'wrote plain HTML > got fed up writing closing tags and having too little page structure dynamics > generated HTML using frameworks > too many features > kludge accumulated over time > wrote plain HTML again > got fed up again > wrote - wait first wrote YAK.'.split( '>' ).map( yak.f( '{ li : v }' ) ) }
         , { hr : null }
         , { p : 'Bonjour' }
         , { p : (function define( n ) {
@@ -21,12 +29,13 @@
         }( 10 ))
           }
         , { p : 'Aurevoir' }
-    ]
+    ] }
+]
     </script>
 
 
     <script type="text/javascript" id="yak-paste-object">yak.paste([ 
-      { hr : null }
+      { hr : null }  // `null` means: no closing slash
       , { p : [ 'Call yak.paste with an', { strong : 'object' }, ':' ] }
       , { pre : { code : document.getElementById( 'yak-paste-object' ).textContent } }
       , { hr : null}
