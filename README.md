@@ -31,9 +31,7 @@ Please do not take `yak.js` too seriously.
 
 2a. One possible use: write yak.js code inline and parse it later on:
 
-```
-#!html
-
+```html
 <script type="text/yak.js">
 [
     { p : [ 'Summary: ', { ul : 'wrote plain HTML > got fed up writing closing tags and having too little page structure dynamics > generated HTML using frameworks > too many features > kludge accumulated over time > wrote plain HTML again > got fed up again > wrote - wait first wrote YAK.'.split( '>' ).map( yak.f( '{ li : v }' ) ) }
@@ -66,8 +64,7 @@ Please do not take `yak.js` too seriously.
 
 2b. Another use: directly call `yak.paste(<object>)` or `yak.paste(<filename>)`:
 
-```
-#!html
+```html
 
 <script type="text/javascript">yak.paste([ 
   { hr : null }
@@ -88,16 +85,13 @@ yak.paste("yak_test.yak.js");
 
 1. Load `yak.js`:
 
-```
-#!js
+```js
 load('yak.js');
 ```
 
 2a. One possible use: call `yak.paste(<object or filename>)` as above, which writes to the standard output right away. Example:
 
-```
-#!js
-
+```js
 yak.paste([
   { '!DOCTYPE HTML': null }   // `null` means here: no closing slash
   , { html : [
