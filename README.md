@@ -9,7 +9,7 @@ JSON to write dynamic pages. Can also run in V8 backend + cache
 
 ## Disclaimer
 
-Please do not take `yak.js` too seriously.
+Please do not take `yak.js` too seriously. This started as a joke. Who knows how this will turn out.
 
 ## Contents
 
