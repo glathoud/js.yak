@@ -73,7 +73,7 @@ Please do not take `yak.js` too seriously. This started as a joke. Who knows how
 
 ```html
 
-<script type="text/javascript">yak.paste([ 
+<script type="text/javascript" id="yak-paste-object">yak.paste([ 
   { hr : null }
   , { p : [ 'Call yak.paste with an', { strong : 'object' }, ':' ] }
   , { pre : { code : document.getElementById( 'yak-paste-object' ).textContent } }
