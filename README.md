@@ -34,7 +34,9 @@ Please do not take `yak.js` too seriously.
 ```html
 <script type="text/yak.js">
 [
-    { p : [ 'Summary: ', { ul : 'wrote plain HTML > got fed up writing closing tags and having too little page structure dynamics > generated HTML using frameworks > too many features > kludge accumulated over time > wrote plain HTML again > got fed up again > wrote - wait first wrote YAK.'.split( '>' ).map( yak.f( '{ li : v }' ) ) }
+    { p : [ 'Summary: ', { ul : 'wrote plain HTML > got fed up writing closing tags and having too little page structure dynamics > generated HTML using frameworks > too many features > kludge accumulated over time > wrote plain HTML again > got fed up again > wrote - wait first wrote YAK.'
+                           .split( '>' ).map( yak.f( '{ li : v }' ) ) 
+                         }
     , { hr : null }
     , { p : 'Bonjour' }
     , { p : (function define( n ) {
