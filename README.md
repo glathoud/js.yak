@@ -7,7 +7,17 @@ Idea : sick of both HTML and kludgy backend frameworks -> use JS &
 JSON to write dynamic pages. Can also run in V8 backend + cache
 (varnish or equivalent) if you absolutely want pure HTML output.
 
-## Example 
+## Disclaimer
+
+Please do not take `yak.js` too seriously.
+
+## Contents
+
+ * [Browser example](browser-example)
+ * [Use: directly in the browser](use-directly-in-the-browser)
+ * [Use: in a V8 backend](use-in-a-v8-backend)
+
+## Browser example 
 
 [./yak_test.html](./yak_test.html)
 
