@@ -5,8 +5,7 @@
 //
 // Guillaume Lathoud
 // December 2014
-//
-// LICENSE: do whatever you want with this code. It is not my problem.
+
 
 (function () {
 
@@ -36,7 +35,16 @@
     {
         var t = typeof simple_or_object;
 
-        if ('string' === t  ||  'boolean' === t  ||  'number' === t)
+        if ('string' === t)
+        {
+            return simple_or_object
+                .replace( /&/g, '&amp;' )            
+                .replace( /</g, '&lt;' )
+                .replace( />/g, '&gt;' )            
+            ;
+        }
+
+        if ('boolean' === t  ||  'number' === t)
             return simple_or_object + '';
 
         if ('object' !== t)
