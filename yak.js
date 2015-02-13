@@ -117,7 +117,7 @@
     // 0 in yak.array( 12 )  // true
     // }}}
     {
-        return new Array( n ).join( ',' ).split( ',' );
+        return Array.apply( null, Array( n ) ); // based on:  http://stackoverflow.com/a/19286846
     }
 
     function yak_e( /*expression or partial expression using `v` (left) and optionally `k` (right) variables*/codestring )
