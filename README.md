@@ -13,16 +13,26 @@ Please do not take `yak.js` too seriously. This started as a joke. Who knows how
 
 ## Contents
 
- * [Browser example](#browser-example)
+ * [Browser examples](#browser-examples)
  * [Use: directly in the browser](#use-directly-in-the-browser)
  * [Use: in a V8 backend](#use-in-a-v8-backend)
  * [Tools](#tools)
  
-## Browser example 
+## Browser examples
+
+1. Main example
 
 Source: [./index.html](./index.html)
 
 Live: http://glat.info/js.yak/
+
+2. Other examples (less useful but more visual)
+
+Sources: [./expl/](./expl/)
+
+Live:
+ * http://glat.info/js.yak/expl/mouseover_expotree.html
+ * http://glat.info/js.yak/expl/mouseover_quadtree.html
 
 ## Use: directly in the browser
 

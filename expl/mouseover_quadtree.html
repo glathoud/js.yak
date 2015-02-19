@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>quadtree</title>
+    <script type="text/javascript" src="../yak.js"></script>
+    <style type="text/css">
+    body, .yak-parsed { position: fixed; box-sizing : border-box; border : 0; margin : 0; padding: 0; width:100%;height:100%;}
+    .toto { box-sizing : inherit; float: left; background-color : black; border : solid 1px black; margin : 0px; padding: 1px; }
+    .hover       { transition: background-color 1250ms ease-out; }
+    .hover:hover { transition: background-color 1ms ease-out; background-color:red; }
+    .s1 { height :  50%; width :  50%; }
+    </style>
+    </head>
+  <body>
+
+    <script type="text/yak.js">
+function () {
+    
+    return some( 1 );
+     
+    function some( n )
+    {
+        return n > 3 + Math.round( 3 * Math.random() )
+            ?  ''
+            :  yak.array( 4 ).map( some_one )
+        ;
+
+        function some_one( tmp, i )
+        {
+            return yak.o( 'div class="toto hover s1"'
+                          , some( n+1 )
+                        );
+        }
+    }
+}
+    </script>
+
+
+    <script type="text/javascript">yak.parse();</script>
+  </body>
+
+</html>
