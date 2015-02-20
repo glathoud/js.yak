@@ -66,7 +66,7 @@
             return simple_or_object.html;
 
         if (simple_or_object instanceof Array)
-            return simple_or_object.map( yak ).join( '\n' );
+            return simple_or_object.map( yak ).join( '' );
 
         var karr = Object.keys( simple_or_object );
         if (karr.length !== 1)
