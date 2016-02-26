@@ -84,6 +84,16 @@
 
         var tag = k.match( /^\s*(\S+)(?=\s|$)/ )[ 1 ];
         
+        // detect HTML5 void elements: 
+        // http://www.w3.org/TR/html5/syntax.html#void-elements
+        // http://stackoverflow.com/a/7854998
+        
+        if (tag in { area:1, base:1, br:1, col:1, embed:1, hr:1, img:1, input:1, 
+                     keygen:1, link:1, meta:1, param:1, source:1, track:1, wbr:1 }
+           )
+            return '<' + k + '>'
+        ;
+        
         var v = simple_or_object[ k ];
         return v == null  
             ?  '<' + k + '/>'  
