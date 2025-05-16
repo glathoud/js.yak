@@ -5,7 +5,8 @@
 //
 // Guillaume Lathoud
 // December 2014
-
+// 
+// License: see the accompanying file ./LICENSE
 
 (function () {
 
